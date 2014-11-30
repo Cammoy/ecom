@@ -10,7 +10,7 @@ class Product(models.Model):
 												null=True, blank=True)
 	slug = models.SlugField(unique=True)
 	timestamp = models.DateTimeField(auto_now_add=True, auto_now=False)
-	updated = models.DateTimeField(auto_now_add=False, auto_now=True)
+	updated "= models.DateTimeField(auto_now_add=False, auto_now=True)
 	active = models.BooleanField(default=True)
 
 	def __unicode__(self):
